@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "uniswap-v1-in-solidity",
   "scripts": {
+    "compile": "hardhat compile",
     "test": "hardhat test",
     "deploy": "hardhat run /scripts/deploy.ts"
   },

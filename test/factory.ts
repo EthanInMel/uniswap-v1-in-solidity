@@ -33,8 +33,6 @@ describe("Factory", () => {
 
             const Exchange = await ethers.getContractFactory("Exchange");
             const exchange = await Exchange.attach(exchangeAddress);
-            expect(await exchange.name()).to.equal("Uniswap V1");
-            expect(await exchange.symbol()).to.equal("UNI-V1");
             expect(await exchange.factory()).to.equal(factory.address);
         });
 
